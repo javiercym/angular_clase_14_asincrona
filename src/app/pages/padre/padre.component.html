@@ -1,0 +1,26 @@
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+
+            <app-hijo [datosLateral]="datos"></app-hijo><p></p>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nombre:</span>
+                <input type="text" [(ngModel)]="nombre" class="form-control" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">DNI:</span>
+                <input type="number" [(ngModel)]="dni" class="form-control" aria-describedby="basic-addon1">
+            </div>
+            <span>Estado Civil</span>
+            <select class="form-select" [(ngModel)]="estadoCivil" aria-label="Default select example">
+                <option selected value="Soltero">Soltero</option>
+                <option value="Viudo">Viudo</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+            <br>
+            <button type="button" class="btn btn-success" (click)="enviarDatos()">Enviar</button>
+        </div>
+    </div>
+</div>
